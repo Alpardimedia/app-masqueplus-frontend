@@ -16,6 +16,7 @@ import { PagesComponent } from './pages/pages.component';
 import { InicioComponent } from './pages/home/inicio/inicio.component';
 import { HeaderFrontComponent } from './shared/header-front/header-front.component';
 import { SidebarFrontComponent } from './shared/sidebar-front/sidebar-front.component';
+import { FooterFrontComponent } from './shared/footer-front/footer-front.component';
 import { ModalComponent } from './auth/modal/modal.component';
 import { RegistroComponent } from './auth/registro/registro.component';
 import { RecuperarComponent } from './auth/recuperar/recuperar.component';
@@ -36,7 +37,8 @@ import { RecuperarComponent } from './auth/recuperar/recuperar.component';
     SidebarFrontComponent,
     ModalComponent,
     RegistroComponent,
-    RecuperarComponent
+    RecuperarComponent,
+    FooterFrontComponent
   ],
   imports: [
     APP_ROUTES,
