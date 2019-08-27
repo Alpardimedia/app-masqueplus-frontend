@@ -1,0 +1,390 @@
+/*++++++++++HOJA DE ESTILO DISEÑADA POR DANIEL VELASCO+++++++++++++++*/
+
+.texto-azul {
+	color: #3b7498;/*AZUL MASQUEPLUS*/
+	margin-bottom:2rem;
+	margin-top:2rem;
+	}
+.btn-acceder {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-acceder:hover {
+	color:#cbff00;
+	cursor:pointer;}
+
+.btn-acceder:focus {
+  
+   outline: none;
+}
+
+.justify {
+	text-align:justify;
+	line-height:2rem;}
+
+.logo {
+	margin-bottom:1rem;}
+
+.ayuda {
+	font-size:0.9rem;}
+.ayuda:hover {
+	
+	color:#3c739a;
+	}
+
+.separador-vertical {
+	border-right: 1px solid rgba(217,210,210,1.00);}
+
+.col-padding {
+	padding-top:0.5rem;}
+
+.sombra-slider {
+	text-shadow: 2px 2px 5px #121212; }
+.entradilla-slider {
+	font-size:2em;
+	color:#cbd346;
+	font-weight:bold;}
+
+.mas {
+	width:1.2rem;
+	height:auto;
+	margin-left:10px;
+	margin-top:3px;
+	}
+.mega-banner {
+	background-image:url(../img/mega%20banner.jpg);
+	height:120px;
+	background-position:center;
+	}
+
+.banner-cinta {
+	/*background-image: url(../img/banner-cinta1.jpg);
+	height:90px;
+	background-position:center;*/
+	}
+	
+.separador {
+	background-color:#cbd346;
+	height:1px;
+	max-height:1px;
+    margin-bottom: 1rem;}	
+	
+/*CLASES PARA EL MENU PRINCIPAL*/
+
+.container-menu {
+	width:100%;
+	max-height:50px;
+	}
+	
+.white-space {
+	min-height:60px;
+	width:100%;
+	}
+
+
+.Login-area {
+	
+	position:fixed;
+	right:1.8rem;
+	top:15px;
+	white-space: nowrap;}
+
+/*.Login-area {
+	
+	margin-left:80%;
+	margin-right:1rem;
+	white-space: nowrap;}*/
+
+/*@media (max-width: 1366px) {
+	
+	.Login-area {
+	
+	margin-left:75%;
+	margin-right:1rem;
+	white-space: nowrap;}
+	
+	}*/
+
+.icon-login {
+	font-size:1.1rem;
+	margin-right:10px;
+	margin-left:10px;
+	}
+	
+.icon-registro {
+	font-size:1.3rem;
+	margin-right:10px;
+	margin-left:10px;
+	}	
+	
+.titular-noticia {
+	color: #727272;
+	}
+
+.titular-noticia:hover {
+	color: #3c739a;
+	text-decoration:none;
+	}	
+	
+.sport-tab {
+	background-color:#3b7498;
+	color:#fff;
+	font-size:1.2rem;
+	padding:0.2rem;
+	width:30%;}	
+
+.texto-noticia {
+	color:#848484;}
+
+.texto-noticia:hover {
+	color:#848484;
+	text-decoration:none;}
+/*
+Removes white gap between slides - chagnge to base color of slide images
+*/
+.carousel {
+  background:#007aeb;
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+
+/*<!--SECCION DEL HEADER-->*/
+.bg-menu {
+	background-color: rgba(0, 0, 8, 0.5);
+	}
+/*<!--SECCION DEL HEADER-->*/
+
+/*Columnas Grid*/
+
+.portfolio-item {
+  margin-bottom: 1.2rem;
+}
+
+/*Columnas Grid*/
+
+/*NOTICIA BOX*/
+.label {
+    color: #3b7498;/*AZUL MASQUEPLUS*/
+    padding: 0px 3px 0px 3px;
+	font-weight:bold;
+}
+
+.deporte-label {background-color:#cbff00; /*VERDE MASQUEPLUS*/}
+
+.date-hour {
+	font-size:0.7rem;
+	margin-left:10px;
+	}
+
+.share {
+	font-size:0.8rem;}
+
+.leer-mas {
+	font-size:0.7rem;
+	padding-left:1rem;
+	padding-bottom:1rem;
+	}
+
+.link2 {
+	color:#787878;
+	}
+	
+.link2:hover {
+	color:#3b7498; /*AZUL MASQUEPLUS*/
+	}
+
+.not-padding {
+	padding-top: 5rem !important;
+}
+
+.video-modulo-container {
+	background:#E8E8E8;
+	width:100%;
+	min-height:400px;
+	margin-top:15px;
+	padding:2rem;}
+
+.video-myitem {
+	padding:1rem;} 
+	
+	
+/*VIDEO BOX ESTLOS*/
+
+.box-video {
+	box-shadow: 5px 10px 18px #888888;}
+
+.vid-caption {
+	font-size:1.1rem;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+	color:#6F6F6F;
+	font-weight:bold;
+
+	}
+.play-boton {	
+	color:rgba(255,255,255,0.8);
+	text-shadow:2px #000000;
+	z-index:10;
+	position:absolute;
+	font-size:3rem;
+	margin-top:-50px;
+	left: 45%;
+    top: 45%;
+	
+	}
+.play-boton:hover {
+	color:#cbff00;
+	text-decoration:none;
+	}
+
+.row-carousel { 
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+	 }
+.col-carousel {
+	 -ms-flex-preferred-size: 0;
+	  flex-basis: 0;
+	  -webkit-box-flex: 1;
+	  -ms-flex-positive: 1;
+	  flex-grow: 1;
+	  max-width: 100%;
+	}
+.col-carousel img:hover {
+	opacity:0.5;}	
+	
+.col-carousel-sep {
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top:0.5rem;
+	}
+/*VIDEO BOX ESTLOS*/
+
+
+/*TABS */
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*RESPONSIVE TABS*/
+
+/*
+ * jQuery Bootstrap Responsive Tabs v2.0.1 | Valeriu Timbuc - vtimbuc.com
+ * github.com/vtimbuc/bootstrap-responsive-tabs
+ * @license WTFPL http://www.wtfpl.net/about/
+ */
+.tab-header {
+	font-size:1.3rem;
+	color:rgba(132,132,132,1.00);
+	text-decoration:none;
+	padding:0 4.8rem 0 4.8rem;	
+	}
+	
+
+
+.tab-size {
+	
+	}
+
+.tab-pane {
+	min-height:500px}
+.altura {
+	min-height:500px}
+	
+.tab-header:hover {
+	color:#3c739a;
+	text-decoration:none;}	
+	
+.tab-header:active {
+	color:#3c739a;
+	text-decoration:none;}
+	
+	
+/*.icon-tab {
+	font-size:1.5rem;}	*/
+
+.responsive-tabs-container .tab-pane {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.responsive-tabs-container .accordion-link {
+  display: none;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+@media (max-width: 767px) {
+  .responsive-tabs-container.accordion-xs .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container.accordion-xs .accordion-link {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-tabs-container.accordion-sm .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container.accordion-sm .accordion-link {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .responsive-tabs-container.accordion-md .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container.accordion-md .accordion-link {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-tabs-container.accordion-lg .nav-tabs {
+    display: none;
+  }
+  .responsive-tabs-container.accordion-lg .accordion-link {
+    display: block;
+  }
+}
+
+.align-right {
+	text-align:right;}
+
+.align-center {
+	text-align:center;}
+/*FIN RESPONSIVE TABS*/

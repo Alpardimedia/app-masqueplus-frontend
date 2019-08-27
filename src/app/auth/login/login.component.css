@@ -1,0 +1,10 @@
+.btn-masqueplus {
+  color: #001a39;
+  border-color: #b3ff00;
+}
+
+.btn-masqueplus:hover {
+  color: #b3ff00 !important;
+  border-color: #001a39;
+  background-color: #001a39;
+}

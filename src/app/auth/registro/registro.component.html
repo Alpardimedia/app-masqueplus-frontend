@@ -1,0 +1,47 @@
+<div class="row"><!--------------------------  ROW TAB REGISTRO-->
+  <div class="col p-3 separador-vertical altura">
+    <h1 class="texto-azul text-center">Regístrate es <b>Gratis</b></h1>
+    <p class="justify"> Deberás rellenar todas las casillas, siendo obligatorio para poder avanzar, el Código Postal y la Fecha de Nacimiento. Si nos facilitas estos datos correctamente, nos ayudaras a que podamos ofrecerte los contenidos más apropiados.</p>
+  </div>
+  <form class="col altura">
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-user"></i></span>
+      </div>
+      <input name="usuario" type="text" class="form-control" placeholder="Usuario" aria-label="usuario" required>
+    </div>
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+      </div>
+      <input name="password" required type="password" class="form-control" placeholder="Contraseña" aria-label="password">
+    </div>
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+      </div>
+      <input name="password2" required type="password" class="form-control" placeholder="Confirmar contraseña">
+    </div>
+    <!-- <div class="form-group" *ngIf="forma.errors?.sonIguales && !forma.pristine">
+      <p class="text-danger">Las contraseñas deben de ser iguales.</p>
+    </div> -->
+    <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+        </div>
+        <input name="correo" required type="email" class="form-control" placeholder="Email" aria-label="email">
+    </div>
+    <div class="form-group">
+      <div class="checkbox checkbox-primary">
+        <input type="checkbox" name="condiciones" id="checkbox-signup">
+        <label for="checkbox-signup">Aceptas los Términos del servicio, la Política de privacidad y el uso de cookies de Mas Que Plus.</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-outline-primary btn-block btn-masqueplus">Regístrate</button>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-outline-danger btn-block"><i class="fa fa-google-plus"></i> Regístrate con Google</button>
+    </div>
+  </form>
+</div>
