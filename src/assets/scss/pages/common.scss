@@ -6,22 +6,22 @@ File: scss
 */
 
 @import '../variable';
-/*============================================================== 
- For all pages 
+/*==============================================================
+ For all pages
  ============================================================== */
 
-#main-wrapper { 
+#main-wrapper {
     width: 100%;
     overflow: hidden;
 }
 
-.boxed #main-wrapper {  
+.boxed #main-wrapper {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
     .sidebar-footer {
-        position: absolute; 
+        position: absolute;
     }
     .topbar{
         max-width: 1300px;
@@ -57,18 +57,29 @@ File: scss
  Topbar
 *******************/
 
+.header-navbar.navbar-with-menu .navbar-container,
+.header-navbar .navbar-header {
+  background: rgba(0, 26, 57, 0.8);
+}
+
+.header-navbar .navbar-container ul.nav li a.nav-link-search, .header-navbar .navbar-container ul.nav li a.nav-link-expand,
+.header-navbar .navbar-container ul.nav li > a.nav-link {
+  color: $white;
+}
+
 .fix-header {
     .topbar {
         position: fixed;
         width: 100%;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        top: 0;
     }
     .page-wrapper {
         padding-top: 70px;
     }
     .right-side-panel {
         top: 70px;
-        height: calc(100% - 70px); 
+        height: calc(100% - 70px);
     }
 }
 

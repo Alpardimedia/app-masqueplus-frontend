@@ -1,0 +1,134 @@
+.top-navbar .navbar-nav>.nav-item>.nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+    line-height: 54px;
+}
+
+.profile-pic {
+    width: 30px;
+    border-radius: 100%;
+}
+
+.search-box .app-search input {
+    color: #3c739a;
+}
+
+.dropdown-menu {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    border-color: rgba(120, 130, 140, 0.13);
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+ul.dropdown-user {
+    padding: 0px;
+    min-width: 270px;
+}
+
+ul.dropdown-user li .dw-user-box {
+    padding: 10px 15px;
+}
+
+ul.dropdown-user li .dw-user-box .u-img {
+    width: 70px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul.dropdown-user li .dw-user-box .u-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+ul.dropdown-user li .dw-user-box .u-text {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+ul.dropdown-user li .dw-user-box .u-text h4 {
+    margin: 0px;
+    font-size: 15px;
+}
+
+h4 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+ul.dropdown-user li .dw-user-box .u-text p {
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+ul.dropdown-user li .dw-user-box .u-text .btn {
+    color: #ffffff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.btn-search {
+    padding: 25px !important;
+}
+
+.btn-search:hover {
+    color: #b3ff00 !important;
+}
+
+ul.dropdown-user li.divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: rgba(120, 130, 140, 0.13);
+}
+
+ul.dropdown-user {
+    padding: 0px;
+    min-width: 270px;
+}
+
+ul.dropdown-user li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.dropdown-user li a {
+    padding: 9px 15px;
+    display: block;
+    color: #67757c;
+}
+
+ul.dropdown-user li a:hover {
+    background: #e9edf2;
+    color: #3c739a;
+    text-decoration: none;
+}
+
+[class^="ti-"],
+[class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+}

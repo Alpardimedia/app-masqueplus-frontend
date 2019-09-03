@@ -1,45 +1,45 @@
 <div class="modal animated fadeIn bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <ul class="nav nav-pills nav-justified">
-          <li class="nav-item">
-            <a class="nav-link active" id="tab-login" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true"><i class="fa fa-sign-in"></i> Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="tab-registro" data-toggle="tab" href="#registro" role="tab" aria-controls="registro" aria-selected="false"><i class="fa fa-user"></i> Registro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="tab-recuperar" data-toggle="tab" href="#recuperar" role="tab" aria-controls="recuperar" aria-selected="false"><i class="fa fa-unlock"></i> Recuperar</a>
-          </li>
-        </ul>
-      </div>
-      <div class="modal-body">
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="tab-login">
-              <app-login></app-login>
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="tab-login" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true"><i class="fa fa-sign-in"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-registro" data-toggle="tab" href="#registro" role="tab" aria-controls="registro" aria-selected="false"><i class="fa fa-user"></i> Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-recuperar" data-toggle="tab" href="#recuperar" role="tab" aria-controls="recuperar" aria-selected="false"><i class="fa fa-unlock"></i> Recuperar</a>
+                    </li>
+                </ul>
             </div>
+            <div class="modal-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="tab-login">
+                        <app-login></app-login>
+                    </div>
 
-            <div class="tab-pane fade" id="registro" role="tabpanel" aria-labelledby="tab-registro">
-              <app-registro></app-registro>
+                    <div class="tab-pane fade" id="registro" role="tabpanel" aria-labelledby="tab-registro">
+                        <app-registro></app-registro>
+                    </div>
+
+                    <div class="tab-pane fade" id="recuperar" role="tabpanel" aria-labelledby="tab-recuperar">
+                        <app-recuperar></app-recuperar>
+                    </div>
+
+                    <br>
+
+                    <img class="img-fluid" src="https://dummyimage.com/798x80/000/fff" alt="">
+                </div>
             </div>
-
-            <div class="tab-pane fade" id="recuperar" role="tabpanel" aria-labelledby="tab-recuperar">
-              <app-recuperar></app-recuperar>
+            <div class="modal-footer justify-content-center flex-column flex-md-row">
+                <span class="mr-4 texto-version">Version 1.2</span>
+                <div>
+                    <img src="assets/img/logo/logo_masqueplus_azul.png" width="100" alt="">
+                </div>
+                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 boton-cerrar" data-dismiss="modal">Cerrar</button>
             </div>
-
-            <br>
-
-            <img class="img-fluid" src="https://dummyimage.com/798x80/000/fff" alt="">
-          </div>
-      </div>
-      <div class="modal-footer justify-content-center flex-column flex-md-row">
-        <span class="mr-4 texto-version">Version 1.2</span>
-        <div>
-          <img src="assets/img/logo/logo_masqueplus_azul.png" width="100" alt="">
         </div>
-        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 boton-cerrar" data-dismiss="modal">Cerrar</button>
-      </div>
     </div>
-  </div>
 </div>

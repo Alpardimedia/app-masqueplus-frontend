@@ -1,0 +1,67 @@
+<nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-dark color-cabecera-footer navbar-shadow navbar-brand-center">
+    <div class="navbar-wrapper">
+        <div class="navbar-header" style="visibility: hidden;">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="./">
+                        <img class="brand-logo logo_movil d-md-none" alt="stack admin logo" src="assets/img/logo/logo_masqueplus.png">
+                    </a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-container content">
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav mr-auto float-left">
+                    <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="./">
+                            <img class="brand-logo logo_escritorio" alt="stack admin" src="assets/img/logo/logo_masqueplus.png">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav float-right">
+                    <!-- ============================================================== -->
+                    <!-- Search -->
+                    <!-- ============================================================== -->
+                    <li class="nav-item hidden-xs-down search-box">
+                        <a class="nav-link hidden-sm-down waves-effect waves-dark btn-search" href="javascript:void(0)"><i class="ti-search"></i></a>
+                        <form class="app-search">
+                            <input class="input" type="text" placeholder="Buscar en el sitio...">
+                            <a class="srh-btn"><i class="ti-close"></i></a>
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic"></a>
+                        <div class="dropdown-menu dropdown-menu-right animated animated fadeIn">
+                            <ul class="dropdown-user">
+                                <li>
+                                    <div class="dw-user-box">
+                                        <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
+                                        <div class="u-text">
+                                            <h4>Steave Jobs</h4>
+                                            <p class="text-muted">varun@gmail.com</p>
+                                            <a href="pages-profile.html" class="btn btn-rounded btn-danger btn-sm mt-1">Ver perfil</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                                <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                                <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a (click)="_usuarioService.logout()" class="pointer"><i class="fa fa-power-off"></i> Cerrar sesión</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

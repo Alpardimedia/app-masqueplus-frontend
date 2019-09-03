@@ -1,34 +1,29 @@
 import { NgModule } from "@angular/core";
-import { HeaderComponent } from './admin/header/header.component';
-import { SidebarComponent } from './admin/sidebar/sidebar.component';
-import { FooterComponent } from './admin/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
-
-import { BreadcrumbsComponent } from './admin/breadcrumbs/breadcrumbs.component';
-import { HeaderFrontComponent } from './header-front/header-front.component';
-import { SidebarFrontComponent } from './sidebar-front/sidebar-front.component';
-import { FooterFrontComponent } from './footer-front/footer-front.component';
+import { HeaderComponent } from './header/header.component';
+import { HeaderAdminComponent } from './header-admin/header-admin.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
+    BreadcrumbsComponent,
     SidebarComponent,
     FooterComponent,
-
-    BreadcrumbsComponent,
-    HeaderFrontComponent,
-    SidebarFrontComponent,
-    FooterFrontComponent
+    HeaderAdminComponent
   ],
   exports: [
     HeaderComponent,
-    SidebarComponent,
-    FooterComponent,
-
+    HeaderAdminComponent,
     BreadcrumbsComponent,
-    HeaderFrontComponent,
-    SidebarFrontComponent,
-    FooterFrontComponent
+    SidebarComponent,
+    FooterComponent
+  ],
+  imports: [
+    RouterModule
   ]
 })
 
