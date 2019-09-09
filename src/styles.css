@@ -3,3 +3,7 @@
 .pointer {
     cursor: pointer;
 }
+
+.fixed-navbar {
+    padding-top: 0 !important;
+}

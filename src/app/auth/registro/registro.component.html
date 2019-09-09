@@ -1,52 +1,72 @@
-<div class="row p-5 d-flex align-items-center h-100">
-    <div class="col separador-vertical altura">
-        <h1 class="texto-azul text-center">Regístrate es <b>Gratis</b></h1>
-        <p class="justify p-3">Deberás rellenar todas las casillas, siendo obligatorio para poder avanzar, el Código Postal y la Fecha de Nacimiento. Si nos facilitas estos datos correctamente, nos ayudaras a que podamos ofrecerte los contenidos más apropiados.</p>
-    </div>
-    <form ngNativeValidate [formGroup]="forma" (ngSubmit)="registrarUsuario()" class="col altura">
-        <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-user"></i></span>
+<section id="wrapper" class="login-register login-sidebar" style="background-image:url(assets/images/background/fondo_login_registro.jpg);">
+    <div class="login-box card">
+        <div class="card-body">
+            <div class="col-12 separador-vertical altura mt-2">
+                <h1 class="texto-azul text-center">Regístrate es <b>Gratis</b></h1>
+                <p class="text-center m-3">Deberás rellenar todas las casillas, siendo obligatorio para poder avanzar, el Código Postal y la Fecha de Nacimiento. Si nos facilitas estos datos correctamente, nos ayudaras a que podamos ofrecerte los contenidos más apropiados.</p>
             </div>
-            <input formControlName="nombre" name="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="nombre" required>
-        </div>
-        <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-            </div>
-            <input formControlName="email" name="email" required type="email" class="form-control" placeholder="Email" aria-label="email">
-        </div>
-        <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-lock"></i></span>
-            </div>
-            <input formControlName="password" name="password" required type="password" class="form-control" placeholder="Contraseña" aria-label="password">
-        </div>
-        <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-lock"></i></span>
-            </div>
-            <input formControlName="password2" name="password2" required type="password" class="form-control" placeholder="Confirmar contraseña">
-        </div>
-        <div class="form-group" *ngIf="forma.errors?.sonIguales && !forma.pristine">
-            <p class="text-danger">Las contraseñas deben de ser iguales.</p>
-        </div>
-        <div class="form-group">
-            <div class="checkbox checkbox-primary">
-                <input formControlName="condiciones" type="checkbox" name="condiciones" id="checkbox-signup">
-                <label for="checkbox-signup">Aceptas los Términos del servicio, la Política de privacidad y el uso de cookies de Mas Que Plus.</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-outline-primary btn-block btn-masqueplus">Regístrate</button>
-        </div>
-        <div class="form-group">
+            <form ngNativeValidate [formGroup]="forma" (ngSubmit)="registrarUsuario()" class="col-12 ml-2 altura">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    </div>
+                    <input formControlName="nombre" name="nombre" type="text" class="form-control mr-2" placeholder="Nombre" aria-label="nombre" required>
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input formControlName="email" name="email" required type="email" class="form-control mr-2" placeholder="Email" aria-label="email">
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                    </div>
+                    <input formControlName="dia" name="dia" required type="text" class="form-control col-4" placeholder="Día" aria-label="dia">
+
+                    <input formControlName="mes" name="mes" required type="text" class="form-control col-4" placeholder="Mes" aria-label="mes">
+
+                    <input formControlName="ano" name="ano" required type="text" class="form-control mr-2 col-4" placeholder="Año" aria-label="ano">
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-address-card"></i></span>
+                    </div>
+                    <input formControlName="codigoPostal" name="codigoPostal" required type="text" class="form-control mr-2" placeholder="Código Postal" aria-label="codigoPostal">
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                    </div>
+                    <input formControlName="password" name="password" required type="text" class="form-control mr-2" placeholder="Contraseña" aria-label="password">
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                    </div>
+                    <input formControlName="password2" name="password2" required type="text" class="form-control mr-2" placeholder="Confirmar contraseña">
+                </div>
+                <div class="form-group" *ngIf="forma.errors?.sonIguales && !forma.pristine">
+                    <p class="text-danger">Las contraseñas deben de ser iguales.</p>
+                </div>
+                <div class="form-group mr-2">
+                    <div class="checkbox checkbox-primary">
+                        <input formControlName="condiciones" type="checkbox" name="condiciones" id="checkbox-signup">
+                        <label for="checkbox-signup">Aceptas los Términos del servicio, la Política de privacidad y el uso de cookies de Mas Que Plus.</label>
+                    </div>
+                </div>
+                <div class="form-group mr-2">
+                    <button type="submit" class="btn btn-outline-primary btn-block btn-masqueplus">Regístrate</button>
+                </div>
+                <!-- <div class="form-group">
             <button type="button" class="btn btn-outline-danger btn-block"><i class="fa fa-google-plus"></i> Regístrate con Google</button>
+        </div> -->
+                <div class="form-group m-b-0 mt-1">
+                    <div class="col-sm-12">
+                        ¿Ya tienes ya cuenta? <a href="#/login" class="text-primary"><b>Iniciar sesión</b></a>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="form-group m-b-0 mt-1">
-            <div class="col-sm-12">
-                ¿Ya tienes ya cuenta? <a href="#/login" class="text-primary"><b>Iniciar sesión</b></a>
-            </div>
-        </div>
-    </form>
-</div>
+    </div>
+</section>

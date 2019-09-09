@@ -58,10 +58,10 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    let usuario = new Usuario(null, forma.value.email, forma.value.password);
+    const usuario = new Usuario(null, forma.value.email, forma.value.password);
 
     this._usuarioService.login(usuario, forma.value.recuerdame)
-    .subscribe(resp => window.location.href = '#/admin');
+        .subscribe(resp => window.location.href = '#/admin');
   }
 
 }

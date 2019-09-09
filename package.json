@@ -24,6 +24,7 @@
         "rxjs": "~6.4.0",
         "rxjs-compat": "^6.5.2",
         "sweetalert": "^2.1.2",
+        "@types/sweetalert": "^2.0.4",
         "tslib": "^1.10.0",
         "zone.js": "~0.9.1"
     },

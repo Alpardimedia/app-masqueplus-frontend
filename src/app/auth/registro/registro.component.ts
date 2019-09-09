@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
-import * as swal from 'sweetalert';
+import swal from "sweetalert";
 import { UsuarioService } from '../../services/service.index';
 import { Usuario } from '../../models/usuario.model';
 import { Router } from '@angular/router';
-
-export default swal;
 
 @Component({
   selector: 'app-registro',
@@ -44,12 +42,20 @@ export class RegistroComponent implements OnInit {
       email: new FormControl(null, [Validators.required, Validators.email]),
       password: new FormControl(null, Validators.required),
       password2: new FormControl(null, Validators.required),
+      dia: new FormControl(null, Validators.required),
+      mes: new FormControl(null, Validators.required),
+      ano: new FormControl(null, Validators.required),
+      codigoPostal: new FormControl(null, Validators.required),
       condiciones: new FormControl(false),
     }, {validators: this.sonIguales('password', 'password2')});
 
     this.forma.setValue({
       nombre: 'Test ',
       email: 'test@test.com',
+      dia: '21',
+      mes: '06',
+      ano: '1990',
+      codigoPostal: '15172',
       password: '123456',
       password2: '123456',
       condiciones: true
@@ -68,16 +74,31 @@ export class RegistroComponent implements OnInit {
       return;
     }
 
-    const usuario = new Usuario(
+    var limiteEdad = 14;
+
+    var fechaHoy = new Date().getFullYear();
+
+    var edad = fechaHoy - this.forma.value.ano;
+
+    console.log(edad);
+
+    if (edad <= limiteEdad) {
+      swal('Importante', 'No puedes acceder a la plataforma. Tienes que ser mayor de ' + limiteEdad + ' años.', 'error');
+      return;
+    }
+
+    var usuario = new Usuario(
       this.forma.value.nombre,
       this.forma.value.email,
-      this.forma.value.password
+      this.forma.value.password,
+      this.forma.value.dia,
+      this.forma.value.mes,
+      this.forma.value.ano,
+      this.forma.value.codigoPostal
     );
 
     this._usuarioService.crearUsuario(usuario)
-      .subscribe(resp => {
-        console.log(resp);
-      });
+      .subscribe(resp => this.router.navigate(['/login']));
   }
 
 }

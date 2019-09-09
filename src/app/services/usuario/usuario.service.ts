@@ -3,7 +3,9 @@ import { Usuario } from '../../models/usuario.model';
 import { HttpClient } from '@angular/common/http';
 import { URL_SERVICIOS } from '../../config/config';
 
+import { Observable } from 'rxjs/internal/Observable';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
 import swal from 'sweetalert';
 import { Router } from '@angular/router';
 
@@ -77,8 +79,11 @@ export class UsuarioService {
     return this.http.post(url, usuario)
       .map((resp: any) => {
         this.guardarStorage(resp.id, resp.token, resp.usuario);
-
         return true;
+      })
+      .catch(err => {
+        swal('Error en el login', err.error.mensaje, 'error');
+        return Observable.throw(err);
       });
   }
 
@@ -89,6 +94,11 @@ export class UsuarioService {
       .map((res: any) => {
         swal('Usuario creado', usuario.email, 'success');
         return res.usuario;
+      })
+      .catch(err => {
+        console.log(err);
+        swal(err.error.mensaje, err.error.errors.message, 'error');
+        return Observable.throw(err);
       });
   }
 }
